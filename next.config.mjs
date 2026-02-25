@@ -1,6 +1,7 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  output: 'export',
+  basePath: '/Bondarenko',
+  assetPrefix: '/Bondarenko/',
 };
 
 export default nextConfig;
