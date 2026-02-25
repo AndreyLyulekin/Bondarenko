@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import styles from '@/app/page.module.css';
 import { getContent } from '@/lib/content';
+import ThemeButton from './ThemeButton';
 
 export function Header() {
   const c = useMemo(() => getContent(), []);
@@ -24,6 +25,9 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
+            
+
+        <ThemeButton />
           </nav>
 
           <div className={styles.right}>
