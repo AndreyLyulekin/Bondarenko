@@ -4,13 +4,28 @@
   --card: #ffffff;
   --text: #000000;
   --muted: rgba(4, 10, 26, 0.72);
-  --border: rgba(5, 11, 26, 0.12);
+  --border: rgba(3, 10, 27, 0.12);
   --accent: #091536;
   --accentText: #ffffff;
   --shadow: 0 10px 30px rgba(15,23,42,.08);
   --radius: 18px;
   --radiusSm: 12px;
   --container: 1120px;
+
+  --glass-bg: rgba(255,255,255,.86);
+  --shadow-header: 0 10px 30px rgba(15,23,42,.05);
+  --overlay-bg-02: rgba(15,23,42,.02);
+  --overlay-bg-04: rgba(15,23,42,.04);
+  --overlay-bg-06: rgba(15,23,42,.06);
+  --outline-dash: rgba(15,23,42,.18);
+  --text-subtle: rgba(15,23,42,.55);
+  --text-subtle-2: rgba(15,23,42,.60);
+  --logo-grad-from: rgba(30,58,138,.95);
+  --logo-grad-to: rgba(30,58,138,.25);
+  --accent-tint-08: rgba(30,58,138,.08);
+  --accent-tint-10: rgba(30,58,138,.10);
+  --accent-tint-border: rgba(30,58,138,.22);
+  --transparent: transparent;
 }
 
 *{ box-sizing:border-box; }
