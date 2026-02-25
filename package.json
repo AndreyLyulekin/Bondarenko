@@ -2,6 +2,7 @@
   "name": "ohotniki-next15",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://AndreyLyulekin.github.io/Bondarenko",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
