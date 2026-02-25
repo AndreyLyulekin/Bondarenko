@@ -46,7 +46,6 @@ export default function Page() {
                   ))}
                 </div>
 
-                {/* LEAD FORMS (2 cards) */}
                 <div id={c.leadForms.emergency.id} className={`${styles.card} ${styles.cardPad}`}>
                   <h3 className={styles.cardTitle}>{c.leadForms.emergency.title}</h3>
                   <form className={styles.form}>
@@ -61,7 +60,7 @@ export default function Page() {
                   </form>
                 </div>
 
-                <div id="plan" className={`${styles.card} ${styles.cardPad}`}>
+                {/* <div id="plan" className={`${styles.card} ${styles.cardPad}`}>
                   <h3 className={styles.cardTitle}>{c.leadForms.plan.title}</h3>
                   <form className={styles.form}>
                     <div className={styles.field}>
@@ -73,7 +72,7 @@ export default function Page() {
                     </button>
                     <p className={styles.consent}>{c.leadForms.plan.consent}</p>
                   </form>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -229,7 +228,7 @@ export default function Page() {
                 <p className={styles.kicker}>Карта / фото / блок</p>
                 <Placeholder text={c.ui.imagePlaceholder} />
                 <p className={styles.muted} style={{ marginTop: 12 }}>
-                  Здесь можно разместить карту, фото техники, отзывы — как на оригинальном сайте.
+                  Здесь можно разместить карту, фото техники, отзывы
                 </p>
               </div>
             </div>
