@@ -20,17 +20,17 @@ export default function Page() {
           <div className={styles.container}>
             <div className={styles.heroGrid}>
               <div>
-                <h1 className={styles.h1}>
+                <h1 className={`${styles.h1} ${styles.textWhite}`}>
                   {c.hero.titleLines[0]}
                   <br />
                   {c.hero.titleLines[1]}
                 </h1>
 
-                <p className={styles.lead}>{c.meta.description}</p>
+                <p className={`${styles.lead} ${styles.textWhite}`}>{c.meta.description}</p>
 
                 <ul className={styles.bullets}>
                   {c.hero.bullets.map((b) => (
-                    <li key={b}>{b}</li>
+                    <li className={`${styles.textWhite}`} key={b}>{b}</li>
                   ))}
                 </ul>
 
@@ -162,15 +162,15 @@ export default function Page() {
         </section>
 
         {/* ABOUT */}
-        <section id={c.about.id} className={styles.section}>
+        <section id={c.about.id} className={`${styles.section} ${styles.about}`}>
           <div className={styles.container}>
-            <h2 className={styles.h2}>
+            <h2 className={`${styles.h2} ${styles.textWhite}`}>
               {c.about.titleLines[0]}
               <br />
               {c.about.titleLines[1]}
             </h2>
 
-            <p className={styles.muted} style={{ marginBottom: 18 }}>
+            <p className={`${styles.muted} ${styles.textWhite}`} style={{ marginBottom: 18 }}>
               {c.about.text}
             </p>
 

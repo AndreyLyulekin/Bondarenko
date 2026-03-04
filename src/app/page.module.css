@@ -4,6 +4,10 @@
   margin: 0 auto;
 }
 
+.textWhite {
+  color: var(--textWhite) !important;
+}
+
 .header{
   position: sticky;
   top: 0;
@@ -113,7 +117,13 @@
 }
 
 .hero{
-  padding: 46px 0 10px;
+  padding: 46px 0 46px;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),
+    url('../../public/backgroundMain.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .heroGrid{
@@ -337,6 +347,16 @@
   place-items:center;
   font-weight: 900;
   margin-bottom: 10px;
+}
+
+.about{
+  padding: 46px 0 46px;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),
+    url('../../public/backgroundMain_2.bmp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .priceRow{
