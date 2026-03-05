@@ -4,7 +4,6 @@
   --card: #ffffff;
   --text: #000000;
   --textWhite: #ffffff;
-  --muted: rgba(4, 10, 26, 0.72);
   --border: rgba(3, 10, 27, 0.12);
   --accent: #000000;
   --accentText: #ffffff;
@@ -13,7 +12,7 @@
   --radiusSm: 12px;
   --container: 1120px;
 
-  --glass-bg: rgba(255,255,255,.86);
+  --glass-bg: rgba(255,255,255,.6);
   --shadow-header: 0 10px 30px rgba(15,23,42,.05);
   --overlay-bg-02: rgba(15,23,42,.02);
   --overlay-bg-04: rgba(15,23,42,.04);

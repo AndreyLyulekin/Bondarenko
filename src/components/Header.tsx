@@ -37,7 +37,9 @@ export function Header() {
 
             {c.contacts.social.map((s) => (
               <a key={s.label} className={styles.iconLink} href={s.href} target="_blank" rel="noreferrer">
-                {s.label.slice(0, 2)}
+                <>
+                  <img src={`${s.img}`}  alt='Social media icon'/>
+                </>
               </a>
             ))}
 

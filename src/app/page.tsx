@@ -4,7 +4,7 @@ import { getContent } from '@/lib/content';
 import { Header } from '@/components/Header';
 
 function Placeholder({ text }: { text: string }) {
-  return <div className={styles.ph}>{text}</div>;
+  return <img src={'backgroundMain.png'} className={styles.ph} alt={`${text}`}/>;
 }
 
 export default function Page() {
@@ -40,12 +40,12 @@ export default function Page() {
               </div>
 
               <div className={styles.side}>
-                <div className={styles.imgRow}>
+                {/* <div className={styles.imgRow}>
                   {c.hero.images.map((img, idx) => (
                     <Placeholder key={idx} text={c.ui.imagePlaceholder} />
                   ))}
-                </div>
-
+                </div> */}
+{/* 
                 <div id={c.leadForms.emergency.id} className={`${styles.card} ${styles.cardPad}`}>
                   <h3 className={styles.cardTitle}>{c.leadForms.emergency.title}</h3>
                   <form className={styles.form}>
@@ -58,7 +58,7 @@ export default function Page() {
                     </button>
                     <p className={styles.consent}>{c.leadForms.emergency.consent}</p>
                   </form>
-                </div>
+                </div> */}
 
                 {/* <div id="plan" className={`${styles.card} ${styles.cardPad}`}>
                   <h3 className={styles.cardTitle}>{c.leadForms.plan.title}</h3>
