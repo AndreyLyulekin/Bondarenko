@@ -14,7 +14,7 @@ export default function Page() {
     <>
       <Header />
 
-      <main>
+      <main className={styles.main}>
         {/* HERO */}
         <section className={`${styles.section} ${styles.hero}`}>
           <div className={styles.container}>
@@ -199,7 +199,7 @@ export default function Page() {
               <div className={`${styles.card} ${styles.cardPad}`}>
                 <p className={styles.kicker}>{c.contactsSection.phonesTitle}</p>
                 <p className={styles.muted} style={{ marginBottom: 10 }}>
-                  <a href={`tel:${c.contacts.phoneShort.replace(/\D/g, '')}`}>{c.contacts.phoneShort}</a>
+                  <a href={`tel:${c.extraContacts.phoneFull.replace(/\D/g, '')}`}>{c.extraContacts.phoneFull}</a>
                   <br />
                   <a href={`tel:${c.contacts.phoneFull.replace(/\D/g, '')}`}>{c.contacts.phoneFull}</a>
                 </p>

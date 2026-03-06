@@ -21,15 +21,15 @@
     }
   ],
   "contacts": {
-    "phoneShort": "+7(902)485-84-98",
-    "phoneFull": "+7(902)485-84-98",
+    "phoneShort": "+7 (914) 705-64-76",
+    "phoneFull": "+7 (914) 705-64-76",
     "email": "vait_dv@mail.ru",
     "ctaCall": "Звоните!",
     "cities": "Работаем во Владивостоке, Артёме, Кневичах, Трудовом, в Тавричанке, Вольно-Надеждинске, на острове Русский.",
     "social": [
       {
         "label": "WhatsApp",
-        "href": "https://wa.me/79024858498",
+        "href": "https://wa.me/79147056476",
         "img": "wa_icon.png"
       },
       {
@@ -38,6 +38,9 @@
         "img": "tg_icon.png"
       }
     ]
+  },
+  "extraContacts": {
+    "phoneFull": "+7 (902) 485-84-98"
   },
   "hero": {
     "titleLines": [

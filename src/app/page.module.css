@@ -1,3 +1,7 @@
+.main {
+  background-image: url('../../public/gray_cube.jpg');
+}
+
 .container{
   max-width: var(--container);
   padding: 0 20px;
