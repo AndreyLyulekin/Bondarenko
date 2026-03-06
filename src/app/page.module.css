@@ -364,15 +364,6 @@
   margin-bottom: 10px;
 }
 
-.how{
-  padding: 64px 0;
-  background-image:
-    url('../../public/tubes_bg.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .about{
   padding: 64px 0;
   background-image:
