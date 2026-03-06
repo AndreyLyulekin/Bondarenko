@@ -185,7 +185,7 @@
   cursor:pointer;
 }
 
-.btn:hover{ background: var(--overlay-bg-06); }
+.btn:hover{ filter: brightness(0.7); }
 
 .btnAccent{
   background: #007710;
@@ -362,6 +362,15 @@
   place-items:center;
   font-weight: 900;
   margin-bottom: 10px;
+}
+
+.how{
+  padding: 64px 0;
+  background-image:
+    url('../../public/tubes_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about{

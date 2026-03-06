@@ -111,7 +111,7 @@ export default function Page() {
         </section>
 
         {/* HOW WE WORK */}
-        <section id={c.how.id} className={styles.section}>
+        <section id={c.how.id} className={`${styles.section} ${styles.how}`}>
           <div className={styles.container}>
             <div className={`${styles.card} ${styles.cardPad}`}>
               <h2 className={styles.h2}>{c.how.title}</h2>
@@ -225,11 +225,7 @@ export default function Page() {
               </div>
 
               <div className={`${styles.card} ${styles.cardPad}`}>
-                <iframe 
-                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A27a166240462b5b80bec6c7861ad728d454e760d2566bb0bd3d17605a005a7c6&amp;source=constructor" 
-                  width="100%" 
-                  height="400" 
-                  frameBorder="0"/>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A27a166240462b5b80bec6c7861ad728d454e760d2566bb0bd3d17605a005a7c6&amp;source=constructor" width="500" height="400" frameBorder="0"></iframe>
               </div>
             </div>
           </div>
