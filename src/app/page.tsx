@@ -225,11 +225,11 @@ export default function Page() {
               </div>
 
               <div className={`${styles.card} ${styles.cardPad}`}>
-                <p className={styles.kicker}>Карта / фото / блок</p>
-                <Placeholder text={c.ui.imagePlaceholder} />
-                <p className={styles.muted} style={{ marginTop: 12 }}>
-                  Здесь можно разместить карту, фото техники, отзывы
-                </p>
+                <iframe 
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A27a166240462b5b80bec6c7861ad728d454e760d2566bb0bd3d17605a005a7c6&amp;source=constructor" 
+                  width="100%" 
+                  height="400" 
+                  frameBorder="0"/>
               </div>
             </div>
           </div>
