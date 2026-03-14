@@ -15,50 +15,75 @@ export function Header() {
       <div className={styles.container}>
         <div className={styles.headerInner}>
           <div className={styles.brand}>
-            <div className={styles.logo} aria-hidden />
+            <div
+              className={styles.logo}
+              aria-hidden
+            />
             <div className={styles.brandName}>{c.brand.name}</div>
           </div>
 
-          <nav className={styles.nav} aria-label="Навигация по странице">
+          <nav
+            className={styles.nav}
+            aria-label='Навигация по странице'>
             {c.nav.map((item) => (
-              <Link key={item.href} href={item.href}>
+              <Link
+                key={item.href}
+                href={item.href}>
                 {item.label}
               </Link>
             ))}
-            
 
-        {/* <ThemeButton /> */}
+            {/* <ThemeButton /> */}
           </nav>
 
           <div className={styles.right}>
-            <a className={styles.phone} href={`tel:${c.contacts.phoneShort.replace(/\D/g, '')}`}>
+            <a
+              className={`${styles.phone} ${styles.desktopOnly}`}
+              href={`tel:${c.contacts.phoneShort.replace(/\D/g, '')}`}>
               {c.contacts.phoneShort}
             </a>
 
             {c.contacts.social.map((s) => (
-              <a key={s.label} className={styles.iconLink} href={s.href} target="_blank" rel="noreferrer">
+              <a
+                key={s.label}
+                className={styles.iconLink}
+                href={s.href}
+                target='_blank'
+                rel='noreferrer'>
                 <>
-                  <img src={`${s.img}`}  alt='Social media icon'/>
+                  <img
+                    src={`${s.img}`}
+                    alt='Social media icon'
+                  />
                 </>
               </a>
             ))}
 
             <button
               className={styles.menuBtn}
-              type="button"
+              type='button'
               aria-label={open ? c.ui.menuClose : c.ui.menuOpen}
               aria-expanded={open}
-              onClick={() => setOpen((v) => !v)}
-            >
+              onClick={() => setOpen((v) => !v)}>
               ☰
             </button>
           </div>
         </div>
 
         {open && (
-          <nav className={styles.mobileNav} aria-label="Навигация по странице (моб.)">
+          <nav
+            className={styles.mobileNav}
+            aria-label='Навигация по странице (моб.)'>
+            <a
+              className={`${styles.phone} ${styles.mobileOnly}`}
+              href={`tel:${c.contacts.phoneShort.replace(/\D/g, '')}`}>
+              {c.contacts.phoneShort}
+            </a>
             {c.nav.map((item) => (
-              <Link key={item.href} href={item.href} onClick={() => setOpen(false)}>
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setOpen(false)}>
                 {item.label}
               </Link>
             ))}

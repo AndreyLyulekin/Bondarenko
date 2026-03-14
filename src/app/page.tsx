@@ -257,11 +257,18 @@ export default function Page() {
                   {c.contacts.social.map((s) => (
                     <a
                       key={s.label}
-                      className={styles.btn}
+                      className={`${styles.btn}`}
                       href={s.href}
                       target='_blank'
                       rel='noreferrer'>
-                      {s.label}
+                      <>
+                        <img
+                          className={`${styles.iconLink}`}
+                          src={`${s.img}`}
+                          alt='Social media icon'
+                        />
+                        {s.label}
+                      </>
                     </a>
                   ))}
                 </div>
@@ -270,8 +277,6 @@ export default function Page() {
               <div className={`${styles.card} ${styles.cardPad}`}>
                 <iframe
                   src='https://yandex.ru/map-widget/v1/?um=constructor%3A27a166240462b5b80bec6c7861ad728d454e760d2566bb0bd3d17605a005a7c6&amp;source=constructor'
-                  width='500'
-                  height='400'
                   frameBorder='0'></iframe>
               </div>
             </div>
