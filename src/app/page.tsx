@@ -6,10 +6,10 @@ import { Header } from '@/components/Header';
 import { useState } from 'react';
 import Modal from '@/components/Modal';
 
-function Placeholder({ text }: { text: string }) {
+function Placeholder({ text, imageSource }: { text: string, imageSource: string }) {
   return (
     <img
-      src={'backgroundMain.png'}
+      src={imageSource}
       className={styles.ph}
       alt={`${text}`}
     />
@@ -209,7 +209,8 @@ export default function Page() {
                 <div
                   key={idx}
                   className={`${styles.card} ${styles.cardPad}`}>
-                  <Placeholder text={c.ui.imagePlaceholder} />
+                  {/* <Placeholder text={c.ui.imagePlaceholder} /> */}
+                  <img className={styles.ph} src={f.img} alt='Фото техники'/>
                   <div style={{ height: 12 }} />
                   <div className={styles.priceName}>
                     {f.titleLines.map((l, i) => (
@@ -282,6 +283,8 @@ export default function Page() {
             </div>
           </div>
         </section>
+
+
         <Modal
           open={orderModalOpen}
           onClose={() => setOrderModalOpen(false)}>

@@ -308,7 +308,6 @@
 }
 
 .kicker {
-  color: var(--text-subtle);
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 0.12em;
