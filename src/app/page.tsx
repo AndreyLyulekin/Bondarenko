@@ -116,9 +116,9 @@ export default function Page() {
         </section>
 
         {/* TECH */}
-        <section className={styles.section}>
+        <section className={`${styles.section} ${styles.tech}`}>
           <div className={styles.container}>
-            <h2 className={styles.h2}>{c.tech.title}</h2>
+            <h2 className={`${styles.h2} ${styles.textWhite}`}>{c.tech.title}</h2>
             <div className={styles.grid2}>
               {c.tech.items.map((t, i) => (
                 <div
@@ -208,11 +208,11 @@ export default function Page() {
               {c.about.features.map((f, idx) => (
                 <div
                   key={idx}
-                  className={`${styles.card} ${styles.cardPad}`}>
+                  className={`${styles.card} ${styles.cardPad} ${styles.transparent}`}>
                   {/* <Placeholder text={c.ui.imagePlaceholder} /> */}
                   <img className={styles.ph} src={f.img} alt='Фото техники'/>
                   <div style={{ height: 12 }} />
-                  <div className={styles.priceName}>
+                  <div className={`${styles.priceName} ${styles.textWhite}`}>
                     {f.titleLines.map((l, i) => (
                       <div key={i}>{l}</div>
                     ))}
