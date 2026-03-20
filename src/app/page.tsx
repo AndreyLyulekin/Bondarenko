@@ -211,7 +211,6 @@ export default function Page() {
                   className={`${styles.card} ${styles.cardPad} ${styles.transparent}`}>
                   {/* <Placeholder text={c.ui.imagePlaceholder} /> */}
                   <img className={styles.ph} src={f.img} alt='Фото техники'/>
-                  <div style={{ height: 12 }} />
                   <div className={`${styles.priceName} ${styles.textWhite}`}>
                     {f.titleLines.map((l, i) => (
                       <div key={i}>{l}</div>
