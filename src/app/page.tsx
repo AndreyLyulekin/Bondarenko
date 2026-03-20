@@ -244,6 +244,12 @@ export default function Page() {
                 <p className={styles.muted}>
                   <a href={`mailto:${c.contacts.email}`}>{c.contacts.email}</a>
                 </p>
+                
+                <div style={{ height: 14 }} />
+                <p className={styles.kicker}>{c.contactsSection.address}</p>
+                <p className={styles.muted}>
+                  {c.contacts.address}
+                </p>
 
                 <div style={{ height: 14 }} />
                 <div className={styles.priceName}>{c.contacts.ctaCall}</div>
@@ -252,7 +258,6 @@ export default function Page() {
                   style={{ marginTop: 8 }}>
                   {c.contacts.cities}
                 </p>
-
                 <div style={{ display: 'flex', gap: 10, marginTop: 14, flexWrap: 'wrap' }}>
                   {c.contacts.social.map((s) => (
                     <a
