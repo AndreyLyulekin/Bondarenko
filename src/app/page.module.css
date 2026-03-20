@@ -12,7 +12,7 @@
   color: var(--textWhite) !important;
 }
 
-.transparent{
+.transparent {
   background: transparent !important;
 }
 
@@ -142,7 +142,23 @@
 
 .hero {
   padding: 96px 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('../../public/backgroundMain.jpg');
+  background-image: url('../../public/backgroundMain_4.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tech {
+  padding: 96px 0;
+  background-image: url('../../public/backgroundMain_2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about {
+  padding: 64px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../public/backgroundMain_5.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -160,14 +176,6 @@
   font-size: clamp(28px, 4vw, 46px);
   line-height: 1.05;
   letter-spacing: -0.5px;
-}
-
-.tech {
-  padding: 96px 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('../../public/backgroundMain_3.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .lead {
@@ -397,14 +405,6 @@
   margin-bottom: 10px;
 }
 
-.about {
-  padding: 64px 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('../../public/backgroundMain_2.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .priceRow {
   display: flex;
   align-items: baseline;
@@ -449,6 +449,10 @@
 }
 
 @media (max-width: 740px) {
+  .section {
+    padding: 48px 0;
+  }
+  
   .hero {
     padding: 48px 0;
   }
