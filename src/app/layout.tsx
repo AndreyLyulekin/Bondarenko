@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { getContent } from '@/lib/content';
+import { VisitLogger } from '@/components/VisitLogger';
 
 export const metadata: Metadata = (() => {
   const c = getContent();
@@ -20,7 +21,10 @@ export const metadata: Metadata = (() => {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ru">
-      <body>{children}</body>
+      <body>
+        <VisitLogger />
+        {children}
+      </body>
     </html>
   );
 }
